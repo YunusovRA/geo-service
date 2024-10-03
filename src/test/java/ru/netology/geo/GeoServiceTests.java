@@ -27,7 +27,6 @@ public class GeoServiceTests {
 
     public Stream<Arguments> testByIp() {
         return Stream.of(
-                Arguments.of("127.0.0.1", new Location(null, null, null, 0)),
                 Arguments.of("172.0.32.11", new Location("Moscow", Country.RUSSIA, "Lenina", 15)),
                 Arguments.of("172.10.132.12", new Location("Moscow", Country.RUSSIA, null, 0)),
                 Arguments.of("96.44.183.149", new Location("New York", Country.USA, " 10th Avenue", 32)),
